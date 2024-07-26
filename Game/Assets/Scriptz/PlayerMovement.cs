@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float speed = 2.0f;
+    public float speed;
     private Transform _transform;
     private void Awake()
     {
