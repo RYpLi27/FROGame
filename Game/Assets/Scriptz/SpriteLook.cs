@@ -2,11 +2,11 @@ using UnityEngine;
 
 public class SpriteLook : MonoBehaviour
 {
-    [SerializeField] bool freezeXZAxis = true;
+    [SerializeField] bool lockUpDown = true;
     // Update is called once per frame
     void Update()
     {
-        if (freezeXZAxis)
+        if (lockUpDown)
         {
         transform.rotation = Quaternion.Euler(0f, Camera.main.transform.rotation.eulerAngles.y, 0f);
         }
