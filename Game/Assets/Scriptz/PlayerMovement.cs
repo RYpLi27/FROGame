@@ -13,6 +13,10 @@ public class PlayerMovement : MonoBehaviour
         _rigidBody = GetComponent<Rigidbody>();
 
     }
+    private void Start()
+    {
+        _rigidBody.freezeRotation = true;
+    }
     void Update()
     {
         float verticalMove = Input.GetAxis("Vertical");
@@ -25,6 +29,6 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        _rigidBody.AddForce(_moveVector * speed, ForceMode.Acceleration);
+        _rigidBody.AddForce(5.0f * _moveVector * speed, ForceMode.Acceleration);
     }
 }
