@@ -17,11 +17,25 @@ public class Weapon : MonoBehaviour
 
      void Update()
     {
-        if (Time.timeSinceLevelLoad >= _nextFireTime && Input.GetAxis("Fire1") > 0)
+        if (Input.GetAxis("Fire1") > 0)
         {
+            shoot();
             Debug.Log("Fire");
 
+        }
+    }
+
+    private void shoot()
+    {
+        if (Time.timeSinceLevelLoad < _nextFireTime)
+        {
+            return;
+            if (Physics.Raycast(transformPosition.position, transformPosition.forward, out RaycastHit hitInfo))
+            {
+                Debug.Log(hitInfo.collider);
+            }
             _nextFireTime = Time.timeSinceLevelLoad + 1.0f / fireRate;
         }
     }
+
 }
