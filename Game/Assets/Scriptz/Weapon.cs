@@ -20,8 +20,7 @@ public class Weapon : MonoBehaviour
         if (Input.GetAxis("Fire1") > 0)
         {
             shoot();
-            Debug.Log("Fire");
-
+            //Debug.Log("Fire");
         }
     }
 
@@ -31,11 +30,12 @@ public class Weapon : MonoBehaviour
         {
             return;
         }
-            if (Physics.Raycast(transformPosition.position, transformPosition.forward, out RaycastHit hitInfo))
-            {
-                Debug.Log(hitInfo.collider);
-            }
-            _nextFireTime = Time.timeSinceLevelLoad + 1.0f / fireRate;
+        if (Physics.Raycast(transformPosition.position, transformPosition.forward, out RaycastHit hitInfo))
+        {
+             Debug.Log(hitInfo.collider);
+        }
+    
+        _nextFireTime = Time.timeSinceLevelLoad + 1.0f / fireRate;
     }
 
 }
