@@ -30,12 +30,12 @@ public class Weapon : MonoBehaviour
         if (Time.timeSinceLevelLoad < _nextFireTime)
         {
             return;
+        }
             if (Physics.Raycast(transformPosition.position, transformPosition.forward, out RaycastHit hitInfo))
             {
                 Debug.Log(hitInfo.collider);
             }
             _nextFireTime = Time.timeSinceLevelLoad + 1.0f / fireRate;
-        }
     }
 
 }
