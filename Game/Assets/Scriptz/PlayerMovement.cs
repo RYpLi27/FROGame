@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float speed;
+    public float speed = 5.0f;
 
     private Transform _transform;
     private Rigidbody _rigidBody;
@@ -29,6 +29,6 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        _rigidBody.AddForce(5.0f * _moveVector * speed, ForceMode.Acceleration);
+        _rigidBody.AddForce(1.0f * _moveVector * speed, ForceMode.Acceleration);
     }
 }

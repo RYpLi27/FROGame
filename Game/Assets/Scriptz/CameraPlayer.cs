@@ -18,7 +18,7 @@ public class CameraPlayer : MonoBehaviour
         Camera camera = GetComponentInChildren<Camera>();
        _cameraTransform = camera.GetComponent<Transform>();
 
-        Cursor.visible = false;
+        //Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
     }
     void Update()
