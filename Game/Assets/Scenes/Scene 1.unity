@@ -723,6 +723,7 @@ RectTransform:
   m_Children:
   - {fileID: 283662492}
   - {fileID: 774146777}
+  - {fileID: 1788462449}
   m_Father: {fileID: 567845115}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -794,9 +795,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7c338f940092c3048837229df68f2298, type: 3}
+  m_Sprite: {fileID: 21300000, guid: aaa74b0252f8e844f835a371a7a9d504, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -1318,7 +1319,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1788462449}
   - component: {fileID: 1788462450}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1334,11 +1335,11 @@ Transform:
   m_GameObject: {fileID: 1788462448}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.1, y: -33.2, z: 0}
-  m_LocalScale: {x: 112.35474, y: 112.35474, z: 112.35474}
+  m_LocalPosition: {x: 1.9782104, y: -92.375854, z: 0}
+  m_LocalScale: {x: 326.0849, y: 326.0849, z: 326.0849}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1807993106}
+  m_Father: {fileID: 706424424}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1788462450
 SpriteRenderer:
@@ -1591,7 +1592,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1788462449}
   - {fileID: 1950655616}
   m_Father: {fileID: 567845115}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1664,9 +1664,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7c338f940092c3048837229df68f2298, type: 3}
+  m_Sprite: {fileID: 21300000, guid: aaa74b0252f8e844f835a371a7a9d504, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -1765,7 +1765,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1814199028}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1814199028
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1786,9 +1798,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7c338f940092c3048837229df68f2298, type: 3}
+  m_Sprite: {fileID: 21300000, guid: aaa74b0252f8e844f835a371a7a9d504, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
